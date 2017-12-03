@@ -1,0 +1,241 @@
+/*general*/
+body {
+    background-color: #cccccc;
+}
+
+#special{
+	margin:0px 0px 0px 100px;
+}
+
+.genstyle {
+    border-radius: 10px;
+    padding: 5px;
+    margin: 0 auto;
+    border: 1px solid green;
+    background-color: #ffc;
+    box-shadow: 5px 5px 5px darkgray;
+}
+.genfont{
+    //font-size: 15px;
+    color: green;
+    text-align: center;
+}
+
+a:link {
+    color: #6600ff;
+}
+
+a:hover {
+    color: green;
+}
+
+/*RWD*/
+@media only screen and (max-width: 600px) {
+    header {
+        width: 100%;
+    }
+
+    aside {
+        display: block;
+        width: 25%;
+    }
+
+    section {
+        display: block;
+        width: 75%
+    }
+
+    footer {
+        width: 100%;
+    }
+
+}
+
+/*header*/
+header {
+    width: 1100px;
+}
+
+header div {
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    margin: 5px;
+}
+
+#oper {
+    float: right;
+}
+
+#title {
+    font-size: 15px;
+    color: #6600ff;
+    position: relative;
+    left: 400px;
+    text-align: center;
+}
+
+#resize {
+    transition: .5s;
+}
+
+#title:hover #resize {
+    -webkit-transform: scale(2);
+    -ms-ransform: scale(2);
+    transform: scale(2);
+}
+
+/*section*/
+section {
+    width: 765px;
+    display: inline-block;
+    position: relative;
+    left: 13%;
+    top: 10px;
+}
+
+#movie {
+    width: 720px;
+    height: 710px;
+}
+
+section #movie td {
+    position: relative;
+    padding: 5px;
+    border: 1px solid green;
+}
+
+.movsprite {
+    width: 240px;
+    height: 355px;
+    float: left;
+    background: url(../IMG/sprite.jpg) no-repeat;
+    background-size: 1200px 710px;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+}
+
+.movsprite:hover {
+    outline: 5px solid #6600ff;
+    outline-offset: 5px;
+}
+
+.movtitle, .movrat {
+    font-size: 30px;
+    color: #6600ff;
+    position: absolute;
+}
+
+.movtitle {
+    left: 6%;
+    top: -5%;
+}
+
+.movrat {
+    right: 5%;
+    bottom: -3%;
+}
+
+
+
+#lt .movsprite {
+    background-position: 0% 0%;
+}
+
+#ct .movsprite {
+    background-position: 0% 100%;
+}
+
+#rt .movsprite {
+    background-position: 25% 0%;
+}
+
+#lb .movsprite {
+    background-position: 50% 0%;
+}
+
+#cb .movsprite {
+    background-position: 25% 100%;
+}
+
+#rb .movsprite {
+    background-position: 75% 0%;
+}
+
+/*aside*/
+aside {
+    width: 250px;
+    height: 720px;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    top: 10px;
+    left: 9%;
+}
+
+#genre {
+    list-style-type: none;
+}
+
+#actor td {
+    text-align: center;
+    margin: 5px;
+}
+
+#actor {
+    position: relative;
+    top: 5%;
+    width: 100%;
+
+}
+
+.actsprite {
+    width: 80px;
+    height: 80px;
+    float: left;
+    background: url(../IMG/actor.png) no-repeat;
+    background-size: 320px 160px;
+}
+
+#first .actsprite {
+    background-position: 0% 0%;
+}
+
+#seccond .actsprite {
+    background-position: 33% 0%;
+}
+
+#third .actsprite {
+    background-position: 66% 0%;
+}
+
+#forth .actsprite {
+    background-position: 100% 0%;
+}
+
+/*footer*/
+footer {
+    position: relative;
+    top: 15px;
+    width: 1100px;
+    margin: 20px;
+
+}
+
+footer div {
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    margin: 5px;
+}
+
+#social {
+    position: relative;
+    left: 750px;
+}
+
+#social li {
+    display: inline-block;
+}
